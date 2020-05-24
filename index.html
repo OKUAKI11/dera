@@ -6,6 +6,95 @@
   <title>小野寺賢人　ポートフォリオサイト</title>
   <link rel="stylesheet" href="C:\Users\jinse\OneDrive\デスクトップ\新しいフォルダー\index2.html\index2.css">
 </head>
+<style>body{
+  font-size: 1rem;
+  width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: black;
+  display: grid;
+  grid-template:  
+  "... header header header header header ... " 1fr
+  "... ...... ...... ...... ...... ...... ... " 50px
+  "... left   ...... center ...... right ... " 1fr 
+  "... ...... ...... ...... ...... ...... ... " 50px
+  "... footer footer footer footer footer ... " 10px
+  /10px 1fr 80px 1fr 40px 1fr 10px ;
+}
+header{
+  grid-area: header;
+  color:honeydew;
+  text-align: center;
+}
+
+pro{
+  grid-area: left;
+  color:honeydew;
+  text-align: center;
+}
+
+works{
+  grid-area: center;
+  color:honeydew;
+}
+
+kyuusyu{
+  grid-area: right;
+  color:honeydew;
+  text-align: center;
+}
+
+footer{
+  grid-area: footer;
+  color: aliceblue;
+}
+
+.icon img{
+ border-radius: 100px;
+ border-radius: 50%;
+}
+
+.info ul{
+  list-style-type: none;
+  display:inline-flex;
+}
+
+.info li{
+  margin: 5px;
+}
+
+.info p{
+  font-size: 8px;
+  color: aliceblue;
+  text-align:center;
+}
+
+@media screen and (max-width:700px){
+  body{
+    grid-template: 
+    "header" 1fr
+    "left"200px
+    "center"400px
+    "right"400px
+    "footer"100px;
+  }
+  header{
+    text-align: left;
+  }
+  works{
+    text-align: left;
+  }
+  pro{
+    text-align: left;
+  }
+  kyuusyu{
+    text-align: left;
+  }
+  .info p{
+    text-align: left;
+  }
+}
+</style>
 <body>
   <header>
     <div class="icon">
